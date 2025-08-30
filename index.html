@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TOKO RISSHOST</title>
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #000;
+      color: #fff;
+    }
+
+    nav {
+      background: #111;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid red;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav h1 {
+      color: red;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 24px;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: red;
+    }
+
+    .hero {
+      background: url('https://files.catbox.moe/kctjmf.gif') no-repeat center;
+      background-size: cover;
+      padding: 120px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      font-family: 'Orbitron', sans-serif;
+      animation: fadeIn 1.5s ease-in-out;
+      color: #000;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: 15px auto;
+      font-size: 16px;
+      color: #000;
+    }
+
+    .hero button {
+      margin-top: 25px;
+      padding: 12px 25px;
+      background: red;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .hero button:hover {
+      background: #ff2a2a;
+    }
+
+    .chapter-container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px;
+      gap: 40px;
+      justify-content: center;
+    }
+
+    .chapter {
+      background: #111;
+      padding: 20px;
+      border-radius: 12px;
+      width: 300px;
+      box-shadow: 0 0 20px red;
+      transition: transform 0.3s;
+    }
+
+    .chapter:hover {
+      transform: translateY(-5px);
+    }
+
+    .chapter h3 {
+      color: red;
+      font-size: 20px;
+    }
+
+    .chapter img {
+      width: 100%;
+      border-radius: 8px;
+      margin: 10px 0;
+    }
+
+    .chapter .btn {
+      background: red;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .more {
+      padding: 40px 20px;
+      background: #0d0d0d;
+    }
+
+    .more h4 {
+      color: red;
+      margin-bottom: 10px;
+    }
+
+    .more .scripts {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+    }
+
+    .more .script-box {
+      min-width: 150px;
+      height: 80px;
+      background: #222;
+      border: 2px solid red;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    .script-box:hover {
+      background: #333;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    #about, #contact {
+      background: #111;
+    }
+
+    #about h2, #contact h2 {
+      color: red;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    #contact a {
+      display: inline-block;
+      margin-top: 20px;
+      background: red;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 12px;
+      background: #111;
+      color: #aaa;
+    }
+
+    footer a {
+      color: red;
+      text-decoration: none;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+  <h1>TOKO RISSHOST</h1>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#chapters">Features</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero" id="home">
+  <button onclick="window.location.href='https://t.me/RissHosting'">Beli Sekarang!</button>
+</div>
+
+<!-- Features -->
+<div class="chapter-container" id="chapters">
+  <div class="chapter">
+    <h3>SELL PANEL PTERODACTYL</h3>
+    <li>1GB=1K</li>
+    <li>2GB=2K</li>
+    <li>3GB=3K</li>
+    <li>4GB=4K</li>
+    <li>5GB=5K</li>
+    <li>6GB=6K</li>
+    <li>7GB=7K</li>
+    <li>8GB=8K</li>
+    <li>9GB=9K</li>
+    <li>UNLI=10KK</li>
+    <p>SETIAP JUMAT PROMO PANEL UNLI✨✨</p>
+    <button class="btn">Return</button>
+  </div>
+  <div class="chapter">
+    <h3>SELL BAHAN BUG</h3>
+    <li>MT=2K</li>
+    <li>APK FC=3K</li>
+    <li>APK CEK BAND=2K</li>
+    <li>APK GB+FC=5K</li>
+    <button class="btn">Return</button>
+  </div1
+  <div class="chapter">
+    <h3>SELL ALL TITLE RESELLER PANEL PTERODACTYL</h3>
+    <li>RESELLER=5K</li>
+    <li>ADP=10K</li>
+    <li>CEO=15K</li>
+    <li>T.K=20K</li>
+    <li>PT=25K</li>
+    <li>DEV=30K</li>
+    <button class="btn">Return</button>
+  </div>
+  <div class="chapter">
+    <h3>OPEN P.O</h3>
+    <li>SC ZODIACK=</li>
+    <li>SC VEIND</li>
+    <li>SC POISON</li>
+    <button class="btn">Return</button>
+  </div>
+  <div class="chapter">
+    <h3>TQTO</h3>
+    <li>RISSHOSTING (OWNER)</li>
+    <li>VOXCYT (SUPPORT)</li>
+    <li>GILANG (BEST FRIEND)</li>
+  </div>
+  <div class="chapter">
+    <h3>HAMA/RIP</h3>
+    <li>@aryadevbug (RIPPER 2K)</li>
+    <li>@rafzz07 (RIPPER 12K)</li>
+    <li>lwk (HAMA)</li>
+  </div>
+
+<!-- More -->
+<div class="more">
+  <h4>More From RissHosting</h4>
+  <div class="scripts">
+    <div class="script-box">Panel Pterodactyl</div>
+    <div class="script-box">Jasa Create Website</div>
+    <div class="script-box">Script Bot Telegram</div>
+    <div class="script-box">Script Bot WhatsApp</div>
+  </div>
+</div>
+
+<!-- About -->
+<section id="about">
+  <h2>INFORMASI</h2>
+  <p>WEB INI DIRANCANG AGAR BUYER BISA MEMILIH PRODUK YANG DISEDIAKAN OLEH RISSHOSTING</p>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <h2>Contact & Pembelian</h2>
+  <p>Jika kamu tertarik membeli produk atau ingin bertanya, hubungi kami lewat Telegram.</p>
+  <a href="https://t.me/RissHosting" target="_blank">Hubungi via Telegram</a>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© RissHosting • Made by <a href="https://t.me/RissHosting"
+</footer>
+
+</body>
+</html>
